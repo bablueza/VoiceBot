@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package vajaPack;
+
+service VajaService {
+  rpc VajaFunc (VajaRequest) returns (VajaReply) {}
+  rpc VajaStream (stream StreamData) returns (VajaReply) {}
+  rpc VajaBiStream (stream StreamData) returns (stream StreamData) {}
+}
+
+message VajaRequest {
+  string name = 1;
+}
+message VajaReply {
+  string result = 1;
+}
+message StreamData {
+  string check = 1;
+  string data = 2;
+}
