@@ -4,8 +4,8 @@
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 conda update --all --yes
-conda create -n nemo_blue python=3.6.13
-conda activate nemo
+conda create -n grpc python=3.6.13
+conda activate grpc
 ```
 ## Install jupyterlab
 ```
